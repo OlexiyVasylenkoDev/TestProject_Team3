@@ -1,10 +1,12 @@
 import "./Card.css";
 import photo4 from "../../img/photo4.jpg"
+import { useTranslation } from "react-i18next";
 const Card4 = () => {
+  const { t } = useTranslation();
   
   return (
     <div className="card">
-        <span className="top-seller">топ продаж</span>
+        <span className="top-seller">{t ("top")}</span>
         <ul className="icon-upper-list">
           <li className="icon-upper-item">
             <a href="" className="icon-upper-link">
@@ -22,7 +24,7 @@ const Card4 = () => {
           </li>
         </ul>
         <img src={photo4} className="card-photo" alt="" />
-        <p className="card-info">Набір тарілок для кухні Gravis </p>
+        <p className="card-info">{t ("cardInfo")} </p>
         <div className="rat-com">
           <ul className="rating-list">
             <li className="rating-item">

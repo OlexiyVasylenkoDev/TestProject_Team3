@@ -2,7 +2,7 @@ import banner from "../../img/banner.jpg";
 import "./catalog-slider.css";
 import ReactDOM from 'react-dom';
 import React, { Component } from "react";
-import Stylesheet from "reactjs-stylesheet";
+//import Stylesheet from "reactjs-stylesheet";
 class Catalog_slider extends Component <{}, { left: number , next:number, prev:number, dot:number}>{
     constructor(props:any) {
     super(props);
